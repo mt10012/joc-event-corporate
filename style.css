@@ -3,30 +3,30 @@ body {
     padding: 0;
     background: #31BEC5;
     font-family: Arial, sans-serif;
-    height: 100vh;             /* pagina = înălțimea ecranului */
+    height: 100vh;             
     display: flex;
-    justify-content: center;  /* centru pe verticală */
-    align-items: center;      /* centru pe orizontală */
+    justify-content: center;  
+    align-items: center;      
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;                /* spațiu fix între titlu și carduri */
+    gap: 15px;                
 }
 
 .title {
     font-size: 22px;
     font-weight: 800;
     color: black;
-    margin: 0;                /* elimină problemele */
+    margin: 0;                
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 15px;                /* distanță între carduri EXACT 15px */
+    gap: 15px;              
 }
 
 .item img {
