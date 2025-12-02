@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #31BEC5;
+    font-family: Arial, sans-serif;
+    height: 100vh;             /* pagina = înălțimea ecranului */
+    display: flex;
+    justify-content: center;  /* centru pe verticală */
+    align-items: center;      /* centru pe orizontală */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;                /* spațiu fix între titlu și carduri */
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 800;
+    color: black;
+    margin: 0;                /* elimină problemele */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;                /* distanță între carduri EXACT 15px */
+}
+
+.item img {
+    width: 370px;
+    transition: transform 0.25s ease;
+}
+
+.item img:hover {
+    transform: translateY(-10px);
+}
